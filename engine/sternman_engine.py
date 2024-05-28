@@ -1,7 +1,7 @@
-from abc import ABC
+__author__ = 'Jackson Eshbaugh'
+__version__ = '05/28/2024'
 
 from engine import engine
-from car import Car
 
 
 class SternmanEngine(engine.Engine):
