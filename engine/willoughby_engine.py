@@ -9,7 +9,7 @@ class WilloughbyEngine(engine.Engine):
         self.current_mileage = current_mileage
         self.last_service_mileage = last_service_mileage
 
-    def needs_service(self):
+    def needs_service(self) -> bool:
         """
         Checks if this engine needs servicing.
         :return: True if this engine requires service, otherwise false
