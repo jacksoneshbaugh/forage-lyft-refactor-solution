@@ -11,7 +11,8 @@ class WilloughbyEngine(engine.Engine):
 
     def needs_service(self) -> bool:
         """
-        Checks if this engine needs servicing.
+        Checks if this engine needs servicing. Willoughbly engines require servicing every
+        60000 miles.
         :return: True if this engine requires service, otherwise false
         """
         return self.current_mileage - self.last_service_mileage > 60000

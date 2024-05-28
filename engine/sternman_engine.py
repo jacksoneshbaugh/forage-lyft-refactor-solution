@@ -10,7 +10,8 @@ class SternmanEngine(engine.Engine):
 
     def needs_service(self) -> bool:
         """
-        Checks if this engine needs servicing.
+        Checks if this engine needs servicing. Sternman engines require servicing
+        only when the warning light turns on.
         :return: True if this engine requires service, otherwise false
         """
         return self.warning_light_on
