@@ -14,8 +14,8 @@ class SpindlerBattery(Battery):
     def needs_service(self) -> bool:
         """
         Checks if the battery requires servicing. Spindler batteries require
-        servicing every 2 years
+        servicing every 3 years
         :return: True if the battery needs servicing, false otherwise.
         """
         delta: timedelta = self.current_date - self.last_service_date
-        return delta.days > 720
+        return delta.days > 1080
