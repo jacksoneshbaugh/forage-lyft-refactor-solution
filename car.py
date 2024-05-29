@@ -30,14 +30,14 @@ class Car(serviceable.Serviceable):
         pass
 
 class CarFactory():
-    def create_caliope(self, current_date: date, last_service_date: date, current_milage: int, last_service_mileage: int) -> Car:
+    def create_calliope(self, current_date: date, last_service_date: date, current_milage: int, last_service_mileage: int) -> Car:
         """
-        Creates a Caliope car
+        Creates a Calliope car
         :param current_date: the current date
         :param last_service_date: the last date the car was serviced
         :param current_milage: the car's current milage
         :param last_service_mileage: the car's milage the last time it was serviced
-        :return: a Caliope car
+        :return: a Calliope car
         """
         return Car(CapuletEngine(current_milage, last_service_mileage), SpindlerBattery(last_service_date, current_date))
 
